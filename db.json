@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "name": "SAGAR RAJPUT",
+      "email": "rajputsagar7798@gmail.com",
+      "country": "UAE",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "name": "SUJIT GORE",
+      "email": "Gore55@gmail.com",
+      "country": "UAE",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "name": "NEHAL RAJPUT",
+      "email": "NehalRaj99@gmail.com",
+      "country": "Japan",
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "name": "RAHUL  RAJPUT",
+      "email": "RAJPUT@GAMIL.COM",
+      "country": "UAE",
+      "gender": "male",
+      "id": 5
+    },
+    {
+      "name": "",
+      "email": "",
+      "country": "",
+      "gender": "",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "country": "",
+      "gender": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "country": "",
+      "gender": "",
+      "id": 8
+    }
+  ]
+}

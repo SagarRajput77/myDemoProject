@@ -1,0 +1,49 @@
+<div class="container">
+    <form #frm="ngForm" (ngSubmit)="submitfun(frm.value)">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" ngModel [(ngModel)]="f_name">
+        </div>
+        <div class="form-group">
+            <label for="name">Email</label>
+            <input type="text" name="email" class="form-control" ngModel [(ngModel)]="Email">
+        </div><br>
+        <div class="form-group">
+            <label for="country">Country</label>&nbsp;
+            <select name="country" ngModel [(ngModel)]="countryM">
+                <option value="{{desh}}" *ngFor="let desh of count"> {{desh}}</option>
+            </select>
+        </div><br>
+            
+        <div class="form-group">
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" value="male" class="form-control-radio" ngModel [(ngModel)]="Gender">&nbsp;
+            <label for="male">Male</label>&nbsp; &nbsp;
+            <input type="radio" name="gender" value="female" class="form-control-radio" ngModel [(ngModel)]="Gender">&nbsp;
+            <label for="female">female</label>
+        </div>
+        <input type="submit" value="submit" class="btn btn-success mt-3">&nbsp;
+        <input type="reset" value="reset" class="btn btn-outline-danger mt-3">
+        <input type="button" value="up date" class="btn btn-outline-warning mt-3" (click)="Updatebtn(frm.value)">
+    </form>
+</div>
+<button class="btn btn-primary mt-3" (click)="getData()">Fetch Data</button>
+<table class="table table-bordered " *ngIf="frm_data.length > 0">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Mail</th>
+        <th>Country</th>
+        <th>Gender</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let dd of frm_data">
+        <td>{{dd.id}}</td>
+        <td>{{dd.name}}</td>
+        <td>{{dd.email}}</td>
+        <td>{{dd.country}}</td>
+        <td>{{dd.gender}}</td>
+        <td><button class="btn btn-outline-danger" (click)="deleteFun(dd.id)">delete</button>
+        &nbsp;<button class="btn btn-outline-primary" (click)="updateFun(dd)">Edit</button></td>
+    </tr>
+</table>
